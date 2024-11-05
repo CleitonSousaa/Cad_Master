@@ -1,3 +1,13 @@
+# Instação
+```bash
+npm install
+```
+
+# getting started
+```bash
+node app.js
+```
+
 # Estrutura do repositório
 ```bash
 crud-project/
@@ -20,15 +30,6 @@ crud-project/
 ```
 
 
-# Instação
-```bash
-npm install
-```
-
-# getting started
-```bash
-node app.js
-```
 
 # Contribuição
 Contribuições são bem-vindas! Abra uma issue ou envie um pull request.
