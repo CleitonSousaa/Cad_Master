@@ -1,8 +1,11 @@
+require('dotenv').config()
+
 const express = require("express");
 const app = express();
 const handlebars = require('express-handlebars')
 const bodyParser = require('body-parser')
 const Post = require('./models/Post')
+const port = process.env.PORT
 
     app.engine('handlebars', handlebars.engine({defaultLayout: 'main'}))
     app.set('view engine', 'handlebars')
@@ -64,6 +67,6 @@ const Post = require('./models/Post')
             res.send('essa postagem nao existe'+ erro)
         })
     })
-app.listen(8081, function(){
-    console.log("servidor rodando na url http:localhost:8081")
+app.listen(port, function(){
+    console.log(`servidor rodando na url http://localhost:${port}`)
 })
